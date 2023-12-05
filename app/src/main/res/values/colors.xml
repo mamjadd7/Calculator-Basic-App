@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    // custom Color
+    <color name="digit_btn_clr">#d6d7d7</color>
+    <color name="operator_btn_clr">#ffbf00</color>
+    <color name="clear_btn_clr">#ff4000</color>
+    <color name="equal_btn_clr">#2efe63</color>
+    <color name="bg_clr">#fafafa</color>
+    <color name="status_bar_clr">#3800b3</color>
+    <color name="tool_bar_clr">#6200ee</color>
+
+
+</resources>
