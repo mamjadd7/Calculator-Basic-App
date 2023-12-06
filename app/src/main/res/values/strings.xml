@@ -5,7 +5,8 @@
     <string name="multiply">x</string>
     <string name="divide">÷</string>
     <string name="equal">=</string>
-    <string name="clear">c</string>
+    <string name="clear">C</string>
+    <string name="all_clear">AC</string>
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>

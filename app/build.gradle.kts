@@ -41,7 +41,11 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+//    expression dependencies
+//    implementation("net.objecthunter:exp4j:0.4.5")
+//    implementation("org.mariuszgromada.math:MathParser.org-mXparser:4.4.2")
+
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

@@ -35,6 +35,9 @@
             android:background="#F3EBEB"
             android:gravity="center_horizontal|end"
             android:maxLength="16"
+            android:maxLines="1"
+            android:clickable="false"
+            android:focusable="false"
             android:padding="8dp"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
@@ -42,24 +45,24 @@
             android:textColor="@color/black"
             android:textSize="40sp"
             app:layout_constraintBottom_toTopOf="@+id/textViewResult"
-            app:layout_constraintEnd_toEndOf="@+id/btnClear"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/btnSeven" />
 
         <TextView
             android:id="@+id/textViewResult"
             android:layout_width="0dp"
             android:layout_height="70dp"
-            android:gravity="center_horizontal|end"
-            android:padding="8dp"
             android:layout_marginBottom="3dp"
             android:background="#F3EBEB"
-            android:paddingEnd="12dp"
+            android:gravity="center_horizontal|end"
+            android:maxLines="1"
+            android:padding="8dp"
             android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/btnNine"
-            app:layout_constraintEnd_toEndOf="@+id/btnClear"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/btnSeven" />
 
 
@@ -106,9 +109,9 @@
             android:layout_height="80dp"
             android:background="@color/operator_btn_clr"
             android:text="@string/divide"
-            app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
-            app:layout_constraintEnd_toEndOf="@+id/btnMultiply"
-            app:layout_constraintStart_toStartOf="@+id/btnMultiply" />
+            app:layout_constraintBottom_toTopOf="@+id/btnMinus"
+            app:layout_constraintEnd_toEndOf="@+id/btnMinus"
+            app:layout_constraintStart_toStartOf="@+id/btnMinus" />
 
 
         <TextView
@@ -117,10 +120,24 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:background="@color/clear_btn_clr"
-            android:text="@string/clear"
-            app:layout_constraintBottom_toTopOf="@+id/btnPlus"
-            app:layout_constraintEnd_toEndOf="@+id/btnPlus"
-            app:layout_constraintStart_toStartOf="@+id/btnPlus"
+            android:foregroundGravity="center_horizontal"
+            android:paddingTop="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnDivide"
+            app:layout_constraintEnd_toEndOf="@+id/btnDivide"
+            app:layout_constraintStart_toStartOf="@+id/btnDivide"
+            app:layout_constraintWidth_percent=".19"
+            app:drawableTopCompat="@drawable/ic_erase" />
+
+        <TextView
+            android:id="@+id/btnClearAll"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="@color/clear_btn_clr"
+            android:text="@string/all_clear"
+            app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnMultiply"
             app:layout_constraintWidth_percent=".19" />
 
         <TextView
@@ -168,9 +185,9 @@
             android:layout_height="80dp"
             android:background="@color/operator_btn_clr"
             android:text="@string/multiply"
-            app:layout_constraintBottom_toTopOf="@+id/btnMinus"
-            app:layout_constraintEnd_toEndOf="@+id/btnMinus"
-            app:layout_constraintStart_toStartOf="@+id/btnMinus" />
+            app:layout_constraintBottom_toTopOf="@+id/btnPlus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnPlus" />
 
         <TextView
             android:id="@+id/btnOne"
@@ -228,7 +245,7 @@
             android:id="@+id/btnPlus"
             style="@style/button"
             android:layout_width="0dp"
-            android:layout_height="164dp"
+            android:layout_height="80dp"
             android:background="@color/operator_btn_clr"
             android:text="@string/plus"
             app:layout_constraintBottom_toTopOf="@+id/btnEqual"
